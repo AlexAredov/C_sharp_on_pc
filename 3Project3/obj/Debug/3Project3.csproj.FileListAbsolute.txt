@@ -1,0 +1,10 @@
+C:\Users\aared\source\repos\3Project3\bin\Debug\3Project3.exe.config
+C:\Users\aared\source\repos\3Project3\bin\Debug\3Project3.exe
+C:\Users\aared\source\repos\3Project3\bin\Debug\3Project3.pdb
+C:\Users\aared\source\repos\3Project3\obj\Debug\3Project3.csproj.AssemblyReference.cache
+C:\Users\aared\source\repos\3Project3\obj\Debug\_3Project3.Form1.resources
+C:\Users\aared\source\repos\3Project3\obj\Debug\_3Project3.Properties.Resources.resources
+C:\Users\aared\source\repos\3Project3\obj\Debug\3Project3.csproj.GenerateResource.cache
+C:\Users\aared\source\repos\3Project3\obj\Debug\3Project3.csproj.CoreCompileInputs.cache
+C:\Users\aared\source\repos\3Project3\obj\Debug\3Project3.exe
+C:\Users\aared\source\repos\3Project3\obj\Debug\3Project3.pdb
