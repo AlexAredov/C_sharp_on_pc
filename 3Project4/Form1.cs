@@ -16,5 +16,52 @@ namespace _3Project4
         {
             InitializeComponent();
         }
+
+        private double HbHt(double hb, double ht)
+        {
+            return (hb / ht) * 100;
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            double res = HbHt((double)numericUpDown2.Value, (double)numericUpDown3.Value);
+            textBox1.Text = Convert.ToString(res);
+            if (res >= 31 && res <= 38)
+            {
+                label8.Text = "Результат является нормой";
+            }
+            else
+            {
+                if (res < 31)
+                {
+                    label8.Text = "Результат является абсолютной гиперхромией";
+                }
+                else
+                {
+                    label8.Text = "Результат является абсолютной гипохромией";
+                }
+            }
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+            double res = HbHt((double)numericUpDown2.Value, (double)numericUpDown3.Value);
+            textBox1.Text = Convert.ToString(res);
+            if (res >= 31 && res <= 38)
+            {
+                label8.Text = "Результат является нормой";
+            }
+            else
+            {
+                if (res < 31)
+                {
+                    label8.Text = "Результат является абсолютной гиперхромией";
+                }
+                else
+                {
+                    label8.Text = "Результат является абсолютной гипохромией";
+                }
+            }
+        }
     }
 }
