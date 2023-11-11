@@ -1,0 +1,10 @@
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\bin\Debug\33Project4.exe.config
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\bin\Debug\33Project4.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\bin\Debug\33Project4.pdb
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\33Project4.csproj.AssemblyReference.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\_33Project4.Form1.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\_33Project4.Properties.Resources.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\33Project4.csproj.GenerateResource.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\33Project4.csproj.CoreCompileInputs.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\33Project4.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\33Project4\obj\Debug\33Project4.pdb
