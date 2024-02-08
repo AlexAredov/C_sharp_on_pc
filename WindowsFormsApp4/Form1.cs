@@ -103,7 +103,7 @@ namespace WindowsFormsApp4
             label1.Text = sss;
             label2.Text = binar;
             label3.Text = arr.Sum().ToString();
-            label4.Text = arr.Max() + " " + arr.Min();
+            label4.Text = arr.Max() + " index: " + (Array.IndexOf(arr, arr.Max()) + 1).ToString() + " " + arr.Min() + " index: " + (Array.IndexOf(arr, arr.Min()) + 1).ToString();
         }
     }
 }
