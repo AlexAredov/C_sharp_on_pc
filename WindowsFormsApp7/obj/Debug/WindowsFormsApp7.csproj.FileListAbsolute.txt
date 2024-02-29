@@ -1,0 +1,10 @@
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb

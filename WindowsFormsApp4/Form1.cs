@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,9 @@ namespace WindowsFormsApp4
 {
     public partial class Form1 : Form
     {
+        private string s;
+        string[] res;
+        int[] arr;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +28,7 @@ namespace WindowsFormsApp4
             return new string(arr);
         }
 
-        private string solve(string s)
+        /*private string solve(string s)
         {
             s = s + "a";
             string st = "";
@@ -44,7 +48,7 @@ namespace WindowsFormsApp4
                 }
             }
             return st;
-        }
+        }*/
 
         private string perevod(int temp, int ff)
         {
@@ -86,9 +90,22 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string s = textBox1.Text;
-            string[] res = solve(s).Split(',');
-            int[] arr = new int[res.Length];
+            s = textBox1.Text;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string pattern = @"\d{1,}";
+            Regex rgx = new Regex(pattern);
+            string str = "";
+            foreach (Match match in rgx.Matches(s))
+                str += match.Value + ",";
+            res = str.Split(',');
+            arr = new int[res.Length];
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             string sss = "";
             string binar = "";
             for (int i = 0; i < res.Length; i++)
