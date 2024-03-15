@@ -8,3 +8,12 @@ C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.csproj.Cor
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.exe
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.pdb
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.Form1.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.xml
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.csproj.CopyComplete
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.Shared.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.Shared.xml
