@@ -64,43 +64,48 @@ namespace Project1
             }
         }
 
-        private Complex OperCompNum(Complex num1, Complex num2)
-        {
-            switch (comboBox1.SelectedItem)
-            {
-                case "+":
-                    return OperComplexNum.Addition(num1, num2);
-                case "-":
-                    return OperComplexNum.Subtraction(num1, num2);
-                case "*":
-                    return OperComplexNum.Multiplication(num1, num2);
-                case "/":
-                    return OperComplexNum.Division(num1, num2);
-                default:
-                    return null;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            Complex res;
             if(flag == 0)
             {
-                double Re_num1 = Convert.ToDouble(textBox1.Text);
-                double Im_num1 = Convert.ToDouble(textBox2.Text);
-                Complex num1 = new Complex(Re_num1, Im_num1);
-                double Re_num2 = Convert.ToDouble(textBox4.Text);
-                double Im_num2 = Convert.ToDouble(textBox3.Text);
-                Complex num2 = new Complex(Re_num2, Im_num2);
-
+                if(textBox1.Text != "" && textBox2.Text != "" && textBox4.Text != "" && textBox3.Text != "")
+                {
+                    double Re_num1 = Convert.ToDouble(textBox1.Text);
+                    double Im_num1 = Convert.ToDouble(textBox2.Text);
+                    Complex num1 = new Complex(Re_num1, Im_num1);
+                    double Re_num2 = Convert.ToDouble(textBox4.Text);
+                    double Im_num2 = Convert.ToDouble(textBox3.Text);
+                    Complex num2 = new Complex(Re_num2, Im_num2);
+                    res = OperComplexNum.OperCompNum(num1, num2, comboBox1.SelectedItem.ToString());
+                    label7.Text = res.Re + " + " + res.Im + " i";
+                }
             }
             else if(flag == 1)
             {
-
+                if (textBox6.Text != "" && textBox4.Text != "" && textBox3.Text != "")
+                {
+                    double num1 = Convert.ToDouble(textBox6.Text);
+                    double Re_num2 = Convert.ToDouble(textBox4.Text);
+                    double Im_num2 = Convert.ToDouble(textBox3.Text);
+                    Complex num2 = new Complex(Re_num2, Im_num2);
+                    res = OperComplexNum.OperCompNum(num1, num2, comboBox1.SelectedItem.ToString());
+                    label7.Text = res.Re + " + " + res.Im + " i";
+                }
             }
             else
             {
-
+                if (textBox1.Text != "" && textBox2.Text != "" && textBox5.Text != "")
+                {
+                    double num2 = Convert.ToDouble(textBox5.Text);
+                    double Re_num2 = Convert.ToDouble(textBox4.Text);
+                    double Im_num2 = Convert.ToDouble(textBox3.Text);
+                    Complex num1 = new Complex(Re_num2, Im_num2);
+                    res = OperComplexNum.OperCompNum(num1, num2, comboBox1.SelectedItem.ToString());
+                    label7.Text = res.Re + " + " + res.Im + " i";
+                }
             }
+            
         }
     }
 }

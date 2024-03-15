@@ -77,5 +77,56 @@ namespace Project1
                 num1 / num2.Re,
                 num1 / num2.Im);
         }
+
+        public static Complex OperCompNum(Complex num1, Complex num2, string sign)
+        {
+            switch (sign)
+            {
+                case "+":
+                    return OperComplexNum.Addition(num1, num2);
+                case "-":
+                    return OperComplexNum.Subtraction(num1, num2);
+                case "*":
+                    return OperComplexNum.Multiplication(num1, num2);
+                case "/":
+                    return OperComplexNum.Division(num1, num2);
+                default:
+                    return null;
+            }
+        }
+
+        public static Complex OperCompNum(Complex num1, double num2, string sign)
+        {
+            switch (sign)
+            {
+                case "+":
+                    return OperComplexNum.Addition(num1, num2);
+                case "-":
+                    return OperComplexNum.Subtraction(num1, num2);
+                case "*":
+                    return OperComplexNum.Multiplication(num1, num2);
+                case "/":
+                    return OperComplexNum.Division(num1, num2);
+                default:
+                    return null;
+            }
+        }
+
+        public static Complex OperCompNum(double num1, Complex num2, string sign)
+        {
+            switch (sign)
+            {
+                case "+":
+                    return Addition(num2, num1);
+                case "-":
+                    return Subtraction(num1, num2);
+                case "*":
+                    return Multiplication(num2, num1);
+                case "/":
+                    return Division(num1, num2);
+                default:
+                    return null;
+            }
+        }
     }
 }
