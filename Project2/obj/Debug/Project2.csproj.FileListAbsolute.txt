@@ -17,3 +17,4 @@ C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.dll
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.Shared.dll
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.xml
 C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\OxyPlot.Wpf.Shared.xml
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.Form2.resources

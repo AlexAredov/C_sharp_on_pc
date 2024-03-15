@@ -32,6 +32,8 @@ namespace Project2
 
         private void UpdateTable()
         {
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
             dataGridView1.Columns.Add("name", "Name");
             dataGridView1.Columns.Add("surname", "Surname");
             dataGridView1.Columns.Add("group", "Group");
@@ -129,7 +131,18 @@ namespace Project2
 
         private void studentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            using (Form2 dialogForm = new Form2())
+            {
+                DialogResult dr = dialogForm.ShowDialog(this);
+                if (dr == DialogResult.OK)
+                {
+                    students.Add(dialogForm.getRes());
+                }
+                dialogForm.Close();
+            }
+            UpdateTable();
+            plotView1.Model = ScatterPlot();
         }
+
     }
 }
