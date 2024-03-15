@@ -64,12 +64,23 @@ namespace Project1
             }
         }
 
+        bool StringIsDigits(string s)
+        {
+            foreach (var item in s)
+            {
+                if (!char.IsDigit(item) && !item.Equals("-"))
+                    return false;
+            }
+            return true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Complex res;
             if(flag == 0)
             {
-                if(textBox1.Text != "" && textBox2.Text != "" && textBox4.Text != "" && textBox3.Text != "")
+                if(textBox1.Text != "" && textBox2.Text != "" && textBox4.Text != "" && textBox3.Text != "" 
+                    && StringIsDigits(textBox1.Text + textBox2.Text + textBox4.Text + textBox3.Text))
                 {
                     double Re_num1 = Convert.ToDouble(textBox1.Text);
                     double Im_num1 = Convert.ToDouble(textBox2.Text);
@@ -83,7 +94,8 @@ namespace Project1
             }
             else if(flag == 1)
             {
-                if (textBox6.Text != "" && textBox4.Text != "" && textBox3.Text != "")
+                if (textBox6.Text != "" && textBox4.Text != "" && textBox3.Text != "" 
+                    && StringIsDigits(textBox6.Text + textBox4.Text + textBox3.Text))
                 {
                     double num1 = Convert.ToDouble(textBox6.Text);
                     double Re_num2 = Convert.ToDouble(textBox4.Text);
@@ -95,7 +107,8 @@ namespace Project1
             }
             else
             {
-                if (textBox1.Text != "" && textBox2.Text != "" && textBox5.Text != "")
+                if (textBox1.Text != "" && textBox2.Text != "" && textBox5.Text != ""
+                    && StringIsDigits(textBox5.Text + textBox4.Text + textBox3.Text))
                 {
                     double num2 = Convert.ToDouble(textBox5.Text);
                     double Re_num2 = Convert.ToDouble(textBox4.Text);
