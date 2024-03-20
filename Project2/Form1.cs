@@ -13,6 +13,11 @@ using OxyPlot.Legends;
 using OxyPlot.Wpf;
 using OxyPlot.Axes;
 
+using CsvHelper;
+using System.Collections;
+using System.IO;
+using System.Globalization;
+
 namespace Project2
 {
     public partial class Form1 : Form
@@ -144,5 +149,44 @@ namespace Project2
             plotView1.Model = ScatterPlot();
         }
 
+        private string fileNmae = null;
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() != DialogResult.OK)
+                return;
+            students = new List<Student>();
+            fileNmae = openFileDialog.FileName;
+            var lines = File.ReadLines(fileNmae);
+            foreach (var line in lines)
+            {
+                string[] slist = line.Split(';');
+                Student student = new Student(slist[0], slist[1], slist[2]);
+                students.Add(student);
+            }
+            UpdateTable();
+            plotView1.Model = ScatterPlot();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() != DialogResult.OK)
+                return;
+            string s = "";
+            foreach(Student student in students)
+            {
+                s += student.Name + ";" + student.Surname + ";" + student.Group + "\n";
+            }
+            File.AppendAllText(sfd.FileName + ".csv", s);
+        }
+
+        private void createNewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            students = new List<Student>();
+            UpdateTable();
+            plotView1.Model = ScatterPlot();
+        }
     }
 }
