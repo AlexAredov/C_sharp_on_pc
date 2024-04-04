@@ -25,7 +25,7 @@ namespace Project1
 
         public override string Display()
         {
-            return "Аннотация: \n " + base.Display() + "\n " + "Действующее вещество: " + activeSubstance + " Суточная доза: " + dailyDose + " Продолжительность приема: " + dailyDose;
+            return "Аннотация: \n " + base.Display() + "\n " + "Действующее вещество: " + activeSubstance + " Суточная доза: " + dailyDose + " Продолжительность приема: " + durationOfReception;
         }
     }
 }
