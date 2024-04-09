@@ -1,0 +1,16 @@
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\bin\Debug\Project1.exe.config
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\bin\Debug\Project1.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\bin\Debug\Project1.pdb
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\bin\Debug\Interop.WMPLib.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.csproj.AssemblyReference.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Interop.WMPLib.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.csproj.ResolveComReference.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.Form1.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.Properties.Resources.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.csproj.GenerateResource.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.pdb
+C:\Users\aared\source\repos\C_sharp_on_pc\Project1\obj\Debug\Project1.PEDROOOO.resources
