@@ -50,7 +50,7 @@ namespace Project1
             this.ClientSize = new System.Drawing.Size(439, 511);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "PEDROOOO";
-            this.Text = "PEDROOOO";
+            this.Text = "PEDROOOO TIME";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
