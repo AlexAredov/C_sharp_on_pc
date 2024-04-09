@@ -1,0 +1,10 @@
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\Project2.exe.config
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\Project2.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\bin\Debug\Project2.pdb
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.csproj.AssemblyReference.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.Form1.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.Properties.Resources.resources
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.csproj.GenerateResource.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.csproj.CoreCompileInputs.cache
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.exe
+C:\Users\aared\source\repos\C_sharp_on_pc\Project2\obj\Debug\Project2.pdb
