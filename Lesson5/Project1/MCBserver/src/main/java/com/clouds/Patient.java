@@ -9,7 +9,7 @@ public class Patient {
     private String surname;
     private String secondSurname;
     private Date dateOfBirth = null;
-    private int gender = 0;
+    private int gender = 3;
     private String country;
     private String city;
     private Disease MKBnumber = null;

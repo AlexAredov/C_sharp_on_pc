@@ -3,7 +3,6 @@ package com.clouds;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import javax.swing.text.html.parser.Parser;
 import java.io.UnsupportedEncodingException;
 import java.sql.*;
 import java.text.DateFormat;
@@ -104,34 +103,45 @@ public class DataBase {
     public static void PatchPatient(String id, Patient patient) throws SQLException {
         String sql_start = "UPDATE \"Patients\" SET ";
         String sql_mid = "";
+        int f = 0;
         if(patient.getName() != null){
+            f = 1;
             sql_mid += "\"Name\" = \"" + patient.getName() + "\", ";
         }
         if (patient.getSurname() != null){
+            f = 1;
             sql_mid += "\"Surname\" = \"" + patient.getSurname() + "\", ";
         }
         if (patient.getSecondSurname() != null){
+            f = 1;
             sql_mid += "\"SecondSurname\" = \"" + patient.getSecondSurname() + "\", ";
         }
         if (patient.getDateOfBirth() != null){
+            f = 1;
             DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             sql_mid += "\"DateOfBirth\" = \"" + patient.getDateOfBirth().getTime()  + "\", ";
         }
         if (patient.getCountry() != null){
+            f = 1;
             sql_mid += "\"Country\" = \"" + patient.getCountry() + "\", ";
         }
         if (patient.getCity() != null){
+            f = 1;
             sql_mid += "\"City\" = \"" + patient.getCity() + "\", ";
         }
         if (patient.getMKBnumber() != null){
+            f = 1;
             sql_mid += "\"MKBnumber\" = \"" + patient.getMKBnumber().getICDcode() + "\", ";
         }
-        if (patient.getGender() != 0){
+        if (patient.getGender() != 3){
+            f = 1;
             sql_mid += "\"Gender\" = \"" + patient.getGender() + "\" ";
         }
         String sql_finish = "WHERE \"ID\"=\"" + id + "\";";
         System.out.println(sql_start + sql_mid + sql_finish);
-        statement.execute(sql_start + sql_mid + sql_finish);
+        if(f == 1){
+            statement.execute(sql_start + sql_mid + sql_finish);
+        }
     }
 
     public static int WritePatient(Patient patient) {
@@ -142,6 +152,15 @@ public class DataBase {
                     patient.getCountry() + "\",\"" + patient.getGender() + "\");";
             statement.execute(sql);
             return statement.getGeneratedKeys().getInt(1);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void DeletePatient(int id) {
+        try {
+            String sql = "DELETE FROM \"Patients\"" + "WHERE \"ID\"=\"" + id + "\";";
+            statement.execute(sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
