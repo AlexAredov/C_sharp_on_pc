@@ -18,7 +18,7 @@ namespace MKBfront
     {
         private static HttpClient client = new HttpClient();
         DataTable dtSales = new DataTable();
-        string url_start = "http://192.168.1.20:8080";
+        string url_start = "http://:8080";
         List<Patient> items;
 
 
