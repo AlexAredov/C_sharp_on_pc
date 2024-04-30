@@ -17,7 +17,7 @@ namespace MKBfront
     public partial class Form2 : Form
     {
         private static HttpClient client = new HttpClient();
-        string url_start = "http://192.168.1.20:8080";
+        string url_start = "http://:8080";
         List<MKB> items;
         List<string> stritems = new List<string>();
         Patient patient;
